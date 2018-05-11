@@ -1,0 +1,19 @@
+/* GLOBAL */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Lato', sans-serif; }
+
+body .container { max-width: 1024px; margin: 0 auto; }
+
+/* HEADER SECTION */
+header > .container { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+
+header { background: url("../images/header-photo.png"); background-size: cover; height: 100vh; background-position: center bottom; }
+
+header nav { padding-top: 42px; display: -ms-flexbox; display: flex; -ms-flex-align: end; align-items: flex-end; }
+
+header nav a { color: #fff; font-size: 17px; font-weight: bold; letter-spacing: 2px; padding: 0 35px; }
+
+header nav a:hover { color: #16A085; text-decoration: none; }
+
+header nav img { padding: 0 60px; }
