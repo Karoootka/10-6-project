@@ -5,12 +5,16 @@ body { font-family: 'Lato', sans-serif; }
 
 .container { max-width: 1024px; margin: 0 auto; }
 
-section { margin-top: 112px; }
+section { padding-top: 112px; }
 
 /* MAIN ELEMENTS STYLES */
-.main-btn { width: 166px; height: 49px; font-size: 12px; font-weight: bold; color: #fff; letter-spacing: 2px; border: none; border-radius: 3px; background-color: #159f85; margin-top: 30px; transition: .3s; cursor: pointer; line-height: normal; }
+.main-btn { width: 166px; height: 49px; font-size: 12px; font-weight: bold; color: #fff; letter-spacing: 2px; border: none; border-radius: 3px; background-color: #159f85; margin-top: 30px; cursor: pointer; line-height: normal; transition: .3s; }
 
 .main-btn:hover { background-color: #0d7c66; }
+
+.main-headline { font-size: 18px; letter-spacing: 3px; color: #159f85; font-weight: bold; padding-bottom: 20px; }
+
+.main-paragraph { font-size: 12.5px; letter-spacing: 2px; line-height: 24px; color: #373737; }
 
 /* HEADER SECTION */
 header { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; background: url("../images/header-photo.png"); background-size: cover; height: 100vh; background-position: center bottom; }
@@ -19,7 +23,7 @@ header .main-nav { -ms-flex: 1; flex: 1; }
 
 header nav { padding-top: 42px; display: -ms-flexbox; display: flex; -ms-flex-align: end; align-items: flex-end; }
 
-header nav a { color: #fff; font-size: 17px; font-weight: bold; letter-spacing: 2px; padding: 0 35px; }
+header nav a { color: #fff; font-size: 17px; font-weight: bold; letter-spacing: 2px; padding: 0 35px; transition: .3s; }
 
 header nav a:hover { color: #159f85; text-decoration: none; }
 
@@ -36,3 +40,9 @@ header .social { -ms-flex: 0; flex: 0; margin-bottom: 8px; font-size: 25px; }
 header .social a { color: #fff; transition: .3s; padding: 0 10px; }
 
 header .social a:hover { color: #c87352; }
+
+.general-info { background-color: #F5F6F7; padding-bottom: 75px; overflow: hidden; }
+
+.general-info .container { position: relative; }
+
+.general-info img { position: absolute; top: -35px; left: -55px; }
