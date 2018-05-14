@@ -23,12 +23,13 @@ body {
 
 section {
   padding-top: 112px;
+  padding-bottom: 75px;
 }
 
 /* MAIN ELEMENTS STYLES */
 
 .main-btn {
-width: 166px;
+width: 170px;
 height: 49px;
 font-size: 12px;
 font-weight: bold;
@@ -133,7 +134,6 @@ header {
 
 .general-info {
   background-color: $back-color;
-  padding-bottom: 75px;
   overflow: hidden;
   .container {
     position: relative;
@@ -146,3 +146,36 @@ header {
 }
 
 //SECTION ABOUT DESIGN
+
+.about-design {
+  overflow: hidden;
+  .container {
+    position: relative;
+  }
+  a {
+    font-size: 30px;
+    padding-right: 9px;
+    color: #000;
+    text-decoration: none;
+    line-height: 20px;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  h4 {
+    margin-bottom: 0;
+    padding-top: 40px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  img {
+    position: absolute;
+  }
+}
+
+// GALLERY
+
+.gallery {
+  background-color: $back-color;
+}

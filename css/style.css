@@ -5,10 +5,10 @@ body { font-family: 'Lato', sans-serif; }
 
 .container { max-width: 1024px; margin: 0 auto; }
 
-section { padding-top: 112px; }
+section { padding-top: 112px; padding-bottom: 75px; }
 
 /* MAIN ELEMENTS STYLES */
-.main-btn { width: 166px; height: 49px; font-size: 12px; font-weight: bold; color: #fff; letter-spacing: 2px; border: none; border-radius: 3px; background-color: #159f85; margin-top: 30px; cursor: pointer; line-height: normal; transition: .3s; }
+.main-btn { width: 170px; height: 49px; font-size: 12px; font-weight: bold; color: #fff; letter-spacing: 2px; border: none; border-radius: 3px; background-color: #159f85; margin-top: 30px; cursor: pointer; line-height: normal; transition: .3s; }
 
 .main-btn:hover { background-color: #0d7c66; }
 
@@ -41,8 +41,22 @@ header .social a { color: #fff; transition: .3s; padding: 0 10px; }
 
 header .social a:hover { color: #c87352; }
 
-.general-info { background-color: #F5F6F7; padding-bottom: 75px; overflow: hidden; }
+.general-info { background-color: #F5F6F7; overflow: hidden; }
 
 .general-info .container { position: relative; }
 
 .general-info img { position: absolute; top: -35px; left: -55px; }
+
+.about-design { overflow: hidden; }
+
+.about-design .container { position: relative; }
+
+.about-design a { font-size: 30px; padding-right: 9px; color: #000; text-decoration: none; line-height: 20px; }
+
+.about-design a:hover { color: #159f85; }
+
+.about-design h4 { margin-bottom: 0; padding-top: 40px; font-size: 13px; letter-spacing: 2px; font-weight: bold; }
+
+.about-design img { position: absolute; }
+
+.gallery { background-color: #F5F6F7; }
