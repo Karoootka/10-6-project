@@ -16,6 +16,10 @@ section { padding-top: 112px; padding-bottom: 75px; }
 
 .main-paragraph { font-size: 12.5px; letter-spacing: 2px; line-height: 24px; color: #373737; }
 
+.arrow { font-size: 30px; color: #000; text-decoration: none; line-height: 20px; transition: .2s; }
+
+.arrow:hover { color: #159f85; text-decoration: none; }
+
 /* HEADER SECTION */
 header { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; background: url("../images/header-photo.png"); background-size: cover; height: 100vh; background-position: center bottom; }
 
@@ -51,12 +55,24 @@ header .social a:hover { color: #c87352; }
 
 .about-design .container { position: relative; }
 
-.about-design a { font-size: 30px; padding-right: 9px; color: #000; text-decoration: none; line-height: 20px; }
-
-.about-design a:hover { color: #159f85; }
-
-.about-design h4 { margin-bottom: 0; padding-top: 40px; font-size: 13px; letter-spacing: 2px; font-weight: bold; }
+.about-design h4 { margin-bottom: 0; padding-top: 40px; font-size: 13px; letter-spacing: 2.5px; font-weight: bold; }
 
 .about-design img { position: absolute; }
 
+.about-design .arrow { padding-right: 9px; }
+
 .gallery { background-color: #F5F6F7; }
+
+.gallery .gallery-arrows { text-align: right; }
+
+.gallery .gallery-arrows .arrow { padding-left: 9px; }
+
+.gallery .gallery-img { display: block; width: 100%; }
+
+.gallery .gallery-el { text-align: center; color: #373737; }
+
+.gallery .gallery-el img { margin: 20px 0; }
+
+.gallery .gallery-el h4 { font-size: 16px; font-weight: bold; letter-spacing: 2px; margin-bottom: 15px; }
+
+.gallery .gallery-el p { font-size: 12px; width: 150px; margin: 0 auto; }

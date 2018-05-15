@@ -62,6 +62,18 @@ transition: .3s;
   color: $font-main;
 }
 
+.arrow {
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+  line-height: 20px;
+  transition: .2s;
+  &:hover {
+    color: $main-color;
+    text-decoration: none;
+  }
+}
+
 /* HEADER SECTION */
 
 
@@ -152,25 +164,18 @@ header {
   .container {
     position: relative;
   }
-  a {
-    font-size: 30px;
-    padding-right: 9px;
-    color: #000;
-    text-decoration: none;
-    line-height: 20px;
-    &:hover {
-      color: $main-color;
-    }
-  }
   h4 {
     margin-bottom: 0;
     padding-top: 40px;
     font-size: 13px;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
     font-weight: bold;
   }
   img {
     position: absolute;
+  }
+  .arrow {
+      padding-right: 9px;
   }
 }
 
@@ -178,4 +183,32 @@ header {
 
 .gallery {
   background-color: $back-color;
+  .gallery-arrows {
+    text-align: right;
+    .arrow {
+        padding-left: 9px;
+    }
+  }
+  .gallery-img {
+    display: block;
+    width: 100%;
+  }
+  .gallery-el {
+    text-align: center;
+    color: $font-main;
+    img {
+      margin: 20px 0;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 12px;
+      width: 150px;
+      margin: 0 auto;
+    }
+  }
 }
