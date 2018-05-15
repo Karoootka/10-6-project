@@ -22,6 +22,11 @@ body {
   margin: 0 auto;
 }
 
+.smaller-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 section {
   padding-top: 112px;
   padding-bottom: 75px;
@@ -245,6 +250,86 @@ header {
     transition: .3s;
     &:hover {
       background-color: $btn-hover;
+    }
+  }
+}
+
+// DOWNLOAD SECTION
+
+.download-info {
+  background-color: $back-color;
+  color: $font-main;
+  text-transform: uppercase;
+  text-align: center;
+  h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 22px;
+  }
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1abc9c;
+    color: #fff;
+    margin: 15px 10px;
+    border-radius: 3px;
+    transition: .3s;
+    &:hover {
+      text-decoration: none;
+      background-color: $main-color;
+    }
+    p {
+      margin: 0;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      width: 230px;
+      line-height: 15px;
+      text-align: left;
+      margin-left: 15px;
+    }
+    i {
+      background-color: $main-color;
+      padding: 15px;
+      font-size: 30px;
+      border-radius: 3px;
+    }
+  }
+}
+
+//FOOTER
+
+footer {
+  margin-top: 40px;
+  .infos {
+    display: inline-block;
+  }
+  img {
+    float: right;
+  }
+  p {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: $font-main;
+    line-height: 50px;
+  }
+  a {
+    font-weight: bold;
+    color: $font-main;
+    letter-spacing: 2px;
+    &:hover {
+      text-decoration: none;
+      color: $main-color;
+    }
+    span {
+      color: $main-color;
+      font-weight: bolder;
     }
   }
 }

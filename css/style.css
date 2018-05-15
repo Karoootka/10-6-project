@@ -5,6 +5,8 @@ body { font-family: 'Lato', sans-serif; }
 
 .container { max-width: 1024px; margin: 0 auto; }
 
+.smaller-container { max-width: 900px; margin: 0 auto; }
+
 section { padding-top: 112px; padding-bottom: 75px; }
 
 /* MAIN ELEMENTS STYLES */
@@ -86,3 +88,31 @@ header .social a:hover { color: #c87352; }
 .subscribe .btn { background-color: #159f85; color: #fff; font-size: 20px; padding: 0 20px; transition: .3s; }
 
 .subscribe .btn:hover { background-color: #0d7c66; }
+
+.download-info { background-color: #F5F6F7; color: #373737; text-transform: uppercase; text-align: center; }
+
+.download-info h2 { font-size: 22px; letter-spacing: 3px; font-weight: bold; }
+
+.download-info p { font-size: 12px; letter-spacing: 1px; line-height: 22px; }
+
+.download-info a { display: -ms-inline-flexbox; display: inline-flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; background-color: #1abc9c; color: #fff; margin: 15px 10px; border-radius: 3px; transition: .3s; }
+
+.download-info a:hover { text-decoration: none; background-color: #159f85; }
+
+.download-info a p { margin: 0; font-size: 15px; font-weight: bold; letter-spacing: 2px; width: 230px; line-height: 15px; text-align: left; margin-left: 15px; }
+
+.download-info a i { background-color: #159f85; padding: 15px; font-size: 30px; border-radius: 3px; }
+
+footer { margin-top: 40px; }
+
+footer .infos { display: inline-block; }
+
+footer img { float: right; }
+
+footer p { font-weight: bold; letter-spacing: 2px; color: #373737; line-height: 50px; }
+
+footer a { font-weight: bold; color: #373737; letter-spacing: 2px; }
+
+footer a:hover { text-decoration: none; color: #159f85; }
+
+footer a span { color: #159f85; font-weight: bolder; }
