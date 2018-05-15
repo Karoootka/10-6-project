@@ -75,4 +75,14 @@ header .social a:hover { color: #c87352; }
 
 .gallery .gallery-el h4 { font-size: 16px; font-weight: bold; letter-spacing: 2px; margin-bottom: 15px; }
 
-.gallery .gallery-el p { font-size: 12px; width: 150px; margin: 0 auto; }
+.gallery .gallery-el p { font-size: 12px; width: 50%; margin: 0 auto; }
+
+.subscribe { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; background-image: url("../images/subscribe-back.png"); background-size: cover; background-position: center; height: 790px; text-align: center; }
+
+.subscribe .input-group { width: 75%; height: 60px; margin: 0 auto; }
+
+.subscribe h3 { color: #fff; font-size: 24px; letter-spacing: 4px; font-weight: bold; margin-bottom: 20px; }
+
+.subscribe .btn { background-color: #159f85; color: #fff; font-size: 20px; padding: 0 20px; transition: .3s; }
+
+.subscribe .btn:hover { background-color: #0d7c66; }

@@ -3,6 +3,7 @@
 $main-color: #159f85;
 $back-color: #F5F6F7;
 $font-main: #373737;
+$btn-hover: #0d7c66;
 
 * {
   margin: 0;
@@ -43,7 +44,7 @@ cursor: pointer;
 line-height: normal;
 transition: .3s;
   &:hover {
-  background-color: #0d7c66;
+  background-color: $btn-hover;
   }
 }
 
@@ -207,8 +208,43 @@ header {
     }
     p {
       font-size: 12px;
-      width: 150px;
+      width: 50%;
       margin: 0 auto;
+    }
+  }
+}
+
+// SUBSCRIBE SECTION
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/subscribe-back.png');
+  background-size: cover;
+  background-position: center;
+  height: 790px;
+  text-align: center;
+  .input-group {
+    width: 75%;
+    height: 60px;
+    margin: 0 auto;
+  }
+  h3 {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .btn {
+    background-color: $main-color;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+    transition: .3s;
+    &:hover {
+      background-color: $btn-hover;
     }
   }
 }
