@@ -9,7 +9,7 @@ body { font-family: 'Lato', sans-serif; }
 
 section { padding-top: 112px; padding-bottom: 75px; }
 
-/* MAIN ELEMENTS STYLES */
+/* GLOBAL ELEMENTS STYLES */
 .main-btn { width: 170px; height: 49px; font-size: 12px; font-weight: bold; color: #fff; letter-spacing: 2px; border: none; border-radius: 3px; background-color: #159f85; margin-top: 30px; cursor: pointer; line-height: normal; transition: .3s; }
 
 .main-btn:hover { background-color: #0d7c66; }
@@ -45,7 +45,7 @@ header .social { -ms-flex: 0; flex: 0; margin-bottom: 8px; font-size: 25px; }
 
 header .social a { color: #fff; transition: .3s; padding: 0 10px; }
 
-header .social a:hover { color: #c87352; }
+header .social a:hover { color: #159f85; }
 
 .general-info { background-color: #F5F6F7; overflow: hidden; }
 

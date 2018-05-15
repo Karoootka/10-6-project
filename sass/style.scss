@@ -13,8 +13,6 @@ $btn-hover: #0d7c66;
 
 body {
   font-family: 'Lato', sans-serif;
-  //max-width: 2000px;
-  //margin: 0 auto;
 }
 
 .container {
@@ -32,7 +30,7 @@ section {
   padding-bottom: 75px;
 }
 
-/* MAIN ELEMENTS STYLES */
+/* GLOBAL ELEMENTS STYLES */
 
 .main-btn {
 width: 170px;
@@ -81,7 +79,6 @@ transition: .3s;
 }
 
 /* HEADER SECTION */
-
 
 header {
   display: flex;
@@ -142,7 +139,7 @@ header {
       transition: .3s;
       padding: 0 10px;
       &:hover {
-        color: #c87352;
+        color: $main-color;
       }
     }
   }
