@@ -35,6 +35,10 @@ header nav a:hover { color: #159f85; text-decoration: none; }
 
 header nav img { padding: 0 60px; }
 
+header nav button#hamburger-menu { background-color: transparent; border: none; cursor: pointer; }
+
+header nav button#hamburger-menu i.fa-bars { display: none; color: #fff; font-size: 50px; }
+
 header .hero { -ms-flex: 1.5; flex: 1.5; color: #fff; text-align: center; }
 
 header .hero h1 { font-size: 35px; font-weight: bold; letter-spacing: 5px; }
@@ -51,7 +55,9 @@ header .social a:hover { color: #159f85; }
 
 .general-info .container { position: relative; }
 
-.general-info img { position: absolute; top: -35px; left: -55px; }
+.general-info img { position: absolute; bottom: -365px; right: 0; }
+
+.general-info h2 span { display: block; }
 
 .about-design { overflow: hidden; }
 
@@ -59,15 +65,17 @@ header .social a:hover { color: #159f85; }
 
 .about-design h4 { margin-bottom: 0; padding-top: 40px; font-size: 13px; letter-spacing: 2.5px; font-weight: bold; }
 
-.about-design img { position: absolute; }
+.about-design .phone-lg img { position: absolute; }
 
-.about-design .arrow { padding-right: 9px; }
+.about-design .arrow-left, .about-design .arrow-right { padding-right: 9px; }
+
+.about-design .phone-sm { display: none; }
 
 .gallery { background-color: #F5F6F7; }
 
 .gallery .gallery-arrows { text-align: right; }
 
-.gallery .gallery-arrows .arrow { padding-left: 9px; }
+.gallery .gallery-arrows .arrow-left, .gallery .gallery-arrows .arrow-right { padding-left: 9px; }
 
 .gallery .gallery-img { display: block; width: 100%; }
 
@@ -79,7 +87,7 @@ header .social a:hover { color: #159f85; }
 
 .gallery .gallery-el p { font-size: 12px; width: 50%; margin: 0 auto; }
 
-.subscribe { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; background-image: url("../images/subscribe-back.png"); background-size: cover; background-position: center; height: 790px; text-align: center; }
+.subscribe { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; background-image: url("../images/subscribe-back.png"); background-size: cover; background-position: center; height: 100vh; text-align: center; }
 
 .subscribe .input-group { width: 75%; height: 60px; margin: 0 auto; }
 
@@ -116,3 +124,27 @@ footer a { font-weight: bold; color: #373737; letter-spacing: 2px; }
 footer a:hover { text-decoration: none; color: #159f85; }
 
 footer a span { color: #159f85; font-weight: bolder; }
+
+@media (max-width: 767px) { section { padding-top: 70px; padding-bottom: 60px; }
+  header nav { padding-top: 20px; width: 90vw; -ms-flex-pack: justify; justify-content: space-between; }
+  header nav a { display: none; }
+  header nav img { padding: 0; }
+  header nav button#hamburger-menu i.fa-bars { display: block; }
+  .general-info { padding-bottom: 0; }
+  .general-info img { position: static; width: 90vw; }
+  .general-info h2 span { display: inline; }
+  .left-no-padding { padding-left: 0; }
+  .about-design .phone-lg { display: none; }
+  .about-design .phone-sm { display: block; text-align: center; }
+  .about-design .phone-sm img { height: 60vh; }
+  .about-design .arrows { text-align: center; margin: 10px 0; }
+  .about-design .arrow-left { padding: 0 9px 0 0; }
+  .about-design .arrow-right { padding: 0 0 0 9px; }
+  .gallery .gallery-arrows { text-align: center; }
+  .gallery .gallery-arrows .arrow-left { padding: 0 9px 0 0; }
+  .gallery .gallery-arrows .arrow-right { padding: 0 0 0 9px; }
+  .gallery .gallery-img { margin: 5px auto; width: 80%; height: auto; }
+  .gallery .gallery-el { text-align: center; color: #373737; padding-bottom: 30px; } }
+
+@media (max-width: 576px) { footer { text-align: center; }
+  footer img { display: none; } }

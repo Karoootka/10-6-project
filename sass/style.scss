@@ -112,6 +112,16 @@ header {
     img {
       padding: 0 60px;
     }
+    button#hamburger-menu {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      i.fa-bars {
+        display: none;
+        color: #fff;
+        font-size: 50px;
+      }
+    }
   }
 
   .hero {
@@ -155,10 +165,14 @@ header {
   }
   img {
     position: absolute;
-    top: -35px;
-    left: -55px;
+    bottom: -365px;
+    right: 0;
+  }
+  h2 span {
+    display: block;
   }
 }
+
 
 //SECTION ABOUT DESIGN
 
@@ -174,11 +188,14 @@ header {
     letter-spacing: 2.5px;
     font-weight: bold;
   }
-  img {
+  .phone-lg img {
     position: absolute;
   }
-  .arrow {
+  .arrow-left, .arrow-right {
       padding-right: 9px;
+  }
+  .phone-sm {
+    display: none;
   }
 }
 
@@ -188,7 +205,7 @@ header {
   background-color: $back-color;
   .gallery-arrows {
     text-align: right;
-    .arrow {
+    .arrow-left, .arrow-right {
         padding-left: 9px;
     }
   }
@@ -225,7 +242,7 @@ header {
   background-image: url('../images/subscribe-back.png');
   background-size: cover;
   background-position: center;
-  height: 790px;
+  height: 100vh;
   text-align: center;
   .input-group {
     width: 75%;
@@ -329,4 +346,103 @@ footer {
       font-weight: bolder;
     }
   }
+}
+
+
+@media (max-width: 767px) {
+
+  section {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  header {
+    nav {
+      padding-top: 20px;
+      width: 90vw;
+      justify-content: space-between;
+      a {
+        display: none;
+      }
+      img {
+        padding: 0;
+      }
+      button#hamburger-menu {
+        i.fa-bars {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .general-info {
+    padding-bottom: 0;
+      img {
+        position: static;
+        width: 90vw;
+      }
+      h2 span {
+        display: inline;
+      }
+    }
+
+  .left-no-padding {
+    padding-left: 0;
+  }
+
+  .about-design {
+    .phone-lg {
+      display: none;
+    }
+    .phone-sm {
+      display: block;
+      text-align: center;
+      img {
+        height: 60vh;
+      }
+    }
+    .arrows {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .arrow-left {
+      padding: 0 9px 0 0;
+    }
+    .arrow-right {
+      padding: 0 0 0 9px;
+    }
+  }
+
+  .gallery {
+    .gallery-arrows {
+      text-align: center;
+      .arrow-left {
+        padding: 0 9px 0 0;
+      }
+      .arrow-right {
+        padding: 0 0 0 9px;
+      }
+    }
+    .gallery-img {
+      margin: 5px auto;
+      width: 80%;
+      height: auto;
+    }
+    .gallery-el {
+      text-align: center;
+      color: $font-main;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  footer {
+    text-align: center;
+    img {
+      display: none;
+    }
+  }
+
 }

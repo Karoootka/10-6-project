@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Fotograf</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -14,7 +15,6 @@
 <body>
 
  <header>
-    <!-- <div class="container"> -->
       <div class="main-nav">
         <nav>
           <a href="#">HOME</a>
@@ -22,6 +22,7 @@
           <img src="images/logo.png" alt="logo">
           <a href="#">DESIGN</a>
           <a href="#">DOWNLOAD</a>
+          <button id="hamburger-menu"><i class="fa fa-bars"></i></button>
         </nav>
       </div>
       <div class="hero">
@@ -34,21 +35,20 @@
         <a href="#"><i class="fa fa-instagram"></i></a>
         <a href="#"><i class="fa fa-dribbble"></i></a>
       </div>
-    <!-- </div> -->
   </header>
 
 <section class="general-info">
   <div class="container">
     <div class="row">
-      <div class="col-5">
-        <h2 class="main-headline">RAPPRESENT YOUR LIFE WITH A<br>SIMPLE PHOTO</h2>
+      <div class="col-12 col-md-5">
+        <h2 class="main-headline">RAPPRESENT YOUR LIFE WITH A <span>SIMPLE PHOTO</span></h2>
         <p class="main-paragraph">Lorem ipsum dolor sit amet, in his alia perpetua
           elaboraret. Commune phaedrum eu mea, id vis maiorum <b>mentitum eligendi</b>.
           Stet offendit dissentias ei eum. Minimum definitiones eu pro, ea phaedrum
           partiendo eam. Magna fastidii delectus at cum.</p>
         <button class="main-btn">GET STARTED</button>
       </div>
-      <div class="col-7">
+      <div class="col-12 col-md-7 left-no-padding">
         <img src="images/hand-phone.png" alt="phone">
       </div>
     </div>
@@ -58,19 +58,24 @@
 <section class="about-design">
   <div class="container">
     <div class="row">
-      <div class="col-7">
+      <div class="col-md-7 phone-lg">
         <img src="images/phone.png" alt="phone">
       </div>
-      <div class="col-5">
+      <div class="col-12 col-md-5">
         <h2 class="main-headline">DESIGN</h2>
         <p class="main-paragraph">Lorem ipsum dolor sit amet, in his alia perpetua
           elaboraret. Commune phaedrum eu mea, id vis maiorum mentitum eligendi.
           Stet offendit dissentias ei eum. Minimum definitiones eu pro, ea phaedrum
           partiendo eam. Magna fastidii delectus at cum.</p>
         <button class="main-btn">LEARN MORE</button>
-        <h4>11/05</h4>
-        <a href="#" class="arrow"><</a>
-        <a href="#" class="arrow">></a>
+        <div class="arrows">
+          <h4>11/05</h4>
+          <a href="#" class="arrow arrow-left"><</a>
+          <a href="#" class="arrow arrow-right">></a>
+        </div>
+      </div>
+      <div class="col-12 phone-sm">
+        <img src="images/phone.png" alt="phone">
       </div>
     </div>
   </div>
@@ -79,11 +84,11 @@
 <section class="gallery">
   <div class="container">
     <div class="gallery-arrows">
-      <a href="#" class="arrow"><</a>
-      <a href="#" class="arrow">></a>
+      <a href="#" class="arrow arrow-left"><</a>
+      <a href="#" class="arrow arrow-right">></a>
     </div>
     <div class="row">
-      <div class="col-4">
+      <div class="col-md-4 col-sm-12">
         <div class="gallery-el">
           <img src="images/logogreen.png" alt="logo">
           <h4>OUR COMMUNITY</h4>
@@ -91,12 +96,13 @@
           elaboraret.</p>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-sm-6">
         <img src="images/photo2.png" class="gallery-img" alt="photo">
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-sm-6">
         <img src="images/photo1.png" class="gallery-img" alt="photo">
       </div>
+    </div>
   </div>
 </section>
 
@@ -126,6 +132,7 @@
     <a href="#">
       <p>PLAY STORE</p><i class="fa fa-android"></i>
     </a>
+  </div>
 </section>
 
 <footer>
@@ -140,6 +147,10 @@
   </div>
 </footer>
 
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
