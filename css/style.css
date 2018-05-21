@@ -33,7 +33,9 @@ header nav a { color: #fff; font-size: 17px; font-weight: bold; letter-spacing: 
 
 header nav a:hover { color: #159f85; text-decoration: none; }
 
-header nav img { padding: 0 60px; }
+header nav img.logo-lg { padding: 0 60px; }
+
+header nav img.logo-sm { display: none; }
 
 header nav button#hamburger-menu { background-color: transparent; border: none; cursor: pointer; }
 
@@ -126,10 +128,15 @@ footer a:hover { text-decoration: none; color: #159f85; }
 footer a span { color: #159f85; font-weight: bolder; }
 
 @media (max-width: 767px) { section { padding-top: 70px; padding-bottom: 60px; }
-  header nav { padding-top: 20px; width: 90vw; -ms-flex-pack: justify; justify-content: space-between; }
+  header .hero h1 { font-size: 28px; }
+  header .main-nav.wide { width: 100%; text-align: center; background-color: rgba(30, 21, 32, 0.7); margin-bottom: 10px; }
+  header nav { padding-top: 10px; width: 90vw; margin: 0 auto; -ms-flex-pack: justify; justify-content: space-between; }
   header nav a { display: none; }
-  header nav img { padding: 0; }
+  header nav img.logo-lg { display: none; }
+  header nav img.logo-sm { display: block; }
   header nav button#hamburger-menu i.fa-bars { display: block; }
+  header nav.expanded { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  header nav.expanded a { display: block; text-align: center; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
   .general-info { padding-bottom: 0; }
   .general-info img { position: static; width: 90vw; }
   .general-info h2 span { display: inline; }
@@ -146,5 +153,12 @@ footer a span { color: #159f85; font-weight: bolder; }
   .gallery .gallery-img { margin: 5px auto; width: 80%; height: auto; }
   .gallery .gallery-el { text-align: center; color: #373737; padding-bottom: 30px; } }
 
-@media (max-width: 576px) { footer { text-align: center; }
+@media (max-width: 767px) and (orientation: portrait) { header .main-nav.wide { margin-bottom: 50px; }
+  header .main-nav nav.expanded { padding-bottom: 14px; }
+  header .main-nav nav.expanded a { padding: 14px 0; } }
+
+@media (max-width: 576px) { header .hero h1 { font-size: 25px; }
+  footer { text-align: center; }
   footer img { display: none; } }
+
+@media (max-width: 370px) and (orientation: portrait) { header nav.expanded a { padding: 0; } }

@@ -109,8 +109,11 @@ header {
         text-decoration: none;
       }
     }
-    img {
+    img.logo-lg {
       padding: 0 60px;
+    }
+    img.logo-sm {
+      display: none;
     }
     button#hamburger-menu {
       background-color: transparent;
@@ -357,19 +360,50 @@ footer {
   }
 
   header {
+    .hero {
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    .main-nav {
+      &.wide {
+      width: 100%;
+      text-align: center;
+      background-color: rgba(30, 21, 32, 0.7);
+      // flex: 0;
+      margin-bottom: 10px;
+      }
+    }
+
     nav {
-      padding-top: 20px;
+      padding-top: 10px;
       width: 90vw;
+      margin: 0 auto;
       justify-content: space-between;
       a {
         display: none;
       }
-      img {
-        padding: 0;
+      img.logo-lg {
+        display: none;
+        // padding: 0;
+      }
+      img.logo-sm {
+        display: block;
       }
       button#hamburger-menu {
         i.fa-bars {
           display: block;
+        }
+      }
+      &.expanded {
+
+        flex-wrap: wrap;
+        a {
+          display: block;
+          text-align: center;
+          flex-basis: 100%;
+          // padding: 14px 0;
         }
       }
     }
@@ -436,7 +470,35 @@ footer {
   }
 }
 
+@media (max-width: 767px) and (orientation: portrait) {
+
+  header {
+    .main-nav {
+      &.wide {
+        margin-bottom: 50px;
+      }
+      nav {
+        &.expanded {
+          padding-bottom: 14px;
+          a {
+            padding: 14px 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
 @media (max-width: 576px) {
+
+  header {
+    .hero {
+      h1 {
+        font-size: 25px;
+      }
+    }
+  }
 
   footer {
     text-align: center;
@@ -444,5 +506,17 @@ footer {
       display: none;
     }
   }
+}
 
+@media (max-width: 370px) and (orientation: portrait) {
+
+  header {
+    nav {
+      &.expanded {
+        a {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
