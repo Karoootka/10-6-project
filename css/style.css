@@ -129,13 +129,13 @@ footer a span { color: #159f85; font-weight: bolder; }
 
 @media (max-width: 767px) { section { padding-top: 70px; padding-bottom: 60px; }
   header .hero h1 { font-size: 28px; }
-  header .main-nav.wide { width: 100%; text-align: center; background-color: rgba(30, 21, 32, 0.7); margin-bottom: 10px; }
+  header .main-nav.wide { transition: all 0.5s ease-in-out; width: 100%; text-align: center; background-color: rgba(30, 21, 32, 0.7); margin-bottom: 10px; }
   header nav { padding-top: 10px; width: 90vw; margin: 0 auto; -ms-flex-pack: justify; justify-content: space-between; }
   header nav a { display: none; }
   header nav img.logo-lg { display: none; }
   header nav img.logo-sm { display: block; }
   header nav button#hamburger-menu i.fa-bars { display: block; }
-  header nav.expanded { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  header nav.expanded { transition: all 0.5s ease-in-out; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   header nav.expanded a { display: block; text-align: center; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
   .general-info { padding-bottom: 0; }
   .general-info img { position: static; width: 90vw; }
@@ -154,11 +154,12 @@ footer a span { color: #159f85; font-weight: bolder; }
   .gallery .gallery-el { text-align: center; color: #373737; padding-bottom: 30px; } }
 
 @media (max-width: 767px) and (orientation: portrait) { header .main-nav.wide { margin-bottom: 50px; }
-  header .main-nav nav.expanded { padding-bottom: 14px; }
+  header .main-nav nav.expanded { transition: all 0.5s ease-in-out; padding-bottom: 14px; }
   header .main-nav nav.expanded a { padding: 14px 0; } }
 
 @media (max-width: 576px) { header .hero h1 { font-size: 25px; }
   footer { text-align: center; }
-  footer img { display: none; } }
+  footer img { display: none; }
+  footer p { font-size: 12px; } }
 
 @media (max-width: 370px) and (orientation: portrait) { header nav.expanded a { padding: 0; } }
