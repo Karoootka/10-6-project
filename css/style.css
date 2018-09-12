@@ -27,19 +27,19 @@ header { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-d
 
 header .main-nav { -ms-flex: 1; flex: 1; }
 
-header nav { padding-top: 42px; display: -ms-flexbox; display: flex; -ms-flex-align: end; align-items: flex-end; }
+header .main-nav nav { padding-top: 42px; display: -ms-flexbox; display: flex; -ms-flex-align: end; align-items: flex-end; }
 
-header nav a { color: #fff; font-size: 17px; font-weight: bold; letter-spacing: 2px; padding: 0 35px; transition: .3s; }
+header .main-nav nav a.nav-el { color: #fff; font-size: 17px; font-weight: bold; letter-spacing: 2px; padding: 0 35px; transition: .3s; }
 
-header nav a:hover { color: #159f85; text-decoration: none; }
+header .main-nav nav a.nav-el:hover { color: #159f85; text-decoration: none; }
 
-header nav img.logo-lg { padding: 0 60px; }
+header .main-nav nav img.logo-lg { padding: 0 60px; }
 
-header nav img.logo-sm { display: none; }
+header .main-nav nav img.logo-sm { display: none; }
 
-header nav button#hamburger-menu { background-color: transparent; border: none; cursor: pointer; }
+header .main-nav nav button#hamburger-menu { background-color: transparent; border: none; cursor: pointer; }
 
-header nav button#hamburger-menu i.fa-bars { display: none; color: #fff; font-size: 50px; }
+header .main-nav nav button#hamburger-menu i.fa-bars { display: none; color: #fff; font-size: 50px; }
 
 header .hero { -ms-flex: 1.5; flex: 1.5; color: #fff; text-align: center; }
 
@@ -128,15 +128,15 @@ footer a:hover { text-decoration: none; color: #159f85; }
 footer a span { color: #159f85; font-weight: bolder; }
 
 @media (max-width: 767px) { section { padding-top: 70px; padding-bottom: 60px; }
+  header .main-nav.wide { transition: all 0.5s ease-in-out; width: 100%; text-align: center; background-image: linear-gradient(#000, transparent); }
+  header .main-nav nav { padding-top: 10px; width: 90vw; margin: 0 auto; -ms-flex-pack: justify; justify-content: space-between; }
+  header .main-nav nav a { display: none; }
+  header .main-nav nav img.logo-lg { display: none; }
+  header .main-nav nav img.logo-sm { display: block; }
+  header .main-nav nav button#hamburger-menu i.fa-bars { display: block; }
+  header .main-nav nav.expanded { transition: all 0.5s ease-in-out; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  header .main-nav nav.expanded a.nav-el { display: block; text-align: center; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
   header .hero h1 { font-size: 28px; }
-  header .main-nav.wide { transition: all 0.5s ease-in-out; width: 100%; text-align: center; background-color: rgba(30, 21, 32, 0.7); margin-bottom: 10px; }
-  header nav { padding-top: 10px; width: 90vw; margin: 0 auto; -ms-flex-pack: justify; justify-content: space-between; }
-  header nav a { display: none; }
-  header nav img.logo-lg { display: none; }
-  header nav img.logo-sm { display: block; }
-  header nav button#hamburger-menu i.fa-bars { display: block; }
-  header nav.expanded { transition: all 0.5s ease-in-out; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  header nav.expanded a { display: block; text-align: center; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
   .general-info { padding-bottom: 0; }
   .general-info img { position: static; width: 90vw; }
   .general-info h2 span { display: inline; }
@@ -153,13 +153,14 @@ footer a span { color: #159f85; font-weight: bolder; }
   .gallery .gallery-img { margin: 5px auto; width: 80%; height: auto; }
   .gallery .gallery-el { text-align: center; color: #373737; padding-bottom: 30px; } }
 
-@media (max-width: 767px) and (orientation: portrait) { header .main-nav.wide { margin-bottom: 50px; }
-  header .main-nav nav.expanded { transition: all 0.5s ease-in-out; padding-bottom: 14px; }
-  header .main-nav nav.expanded a { padding: 14px 0; } }
+@media (max-width: 768px) and (orientation: landscape) { header .main-nav { -ms-flex: 1.5; flex: 1.5; }
+  header .main-nav nav.expanded a.nav-el { transform: translateY(-40px); font-size: 15px; margin: 0 60px; } }
 
 @media (max-width: 576px) { header .hero h1 { font-size: 25px; }
   footer { text-align: center; }
   footer img { display: none; }
   footer p { font-size: 12px; } }
 
-@media (max-width: 370px) and (orientation: portrait) { header nav.expanded a { padding: 0; } }
+@media (max-width: 370px) and (orientation: portrait) { header nav.expanded a.nav-el { padding: 0; }
+  footer p { padding-top: 10px; line-height: 12px; }
+  footer a { font-size: 14px; } }
