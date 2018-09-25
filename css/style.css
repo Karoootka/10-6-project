@@ -23,7 +23,7 @@ section { padding-top: 112px; padding-bottom: 75px; }
 .arrow:hover { color: #159f85; text-decoration: none; }
 
 /* HEADER SECTION */
-header { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; background: url("../images/header-photo.png"); background-size: cover; height: 100vh; background-position: center bottom; }
+header { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; background: url("../images/header-photo.png"); background-size: cover; min-height: 100vh; background-position: center bottom; position: relative; }
 
 header .main-nav { -ms-flex: 1; flex: 1; }
 
@@ -128,15 +128,18 @@ footer a:hover { text-decoration: none; color: #159f85; }
 footer a span { color: #159f85; font-weight: bolder; }
 
 @media (max-width: 767px) { section { padding-top: 70px; padding-bottom: 60px; }
-  header .main-nav.wide { transition: all 0.5s ease-in-out; width: 100%; text-align: center; background-image: linear-gradient(#000, transparent); }
+  header { transition: all 0.5s ease-in-out; }
+  header .main-nav.wide { width: 100%; text-align: center; background-image: linear-gradient(#000, transparent); min-height: 20vh; }
   header .main-nav nav { padding-top: 10px; width: 90vw; margin: 0 auto; -ms-flex-pack: justify; justify-content: space-between; }
   header .main-nav nav a { display: none; }
   header .main-nav nav img.logo-lg { display: none; }
   header .main-nav nav img.logo-sm { display: block; }
   header .main-nav nav button#hamburger-menu i.fa-bars { display: block; }
-  header .main-nav nav.expanded { transition: all 0.5s ease-in-out; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  header .main-nav nav.expanded a.nav-el { display: block; text-align: center; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
+  header .main-nav nav.expanded { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  header .main-nav nav.expanded a.nav-el { display: block; text-align: center; -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 15px 0; }
+  header .hero { min-height: 60vh; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
   header .hero h1 { font-size: 28px; }
+  header .social { min-height: 20vh; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: end; align-items: flex-end; }
   .general-info { padding-bottom: 0; }
   .general-info img { position: static; width: 90vw; }
   .general-info h2 span { display: inline; }
